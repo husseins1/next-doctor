@@ -12,7 +12,17 @@ const Home: NextPage = () => {
   
   return (
     < >
-     
+    <style jsx>
+    {`
+      .background{
+        background:url("/images/hero.jpg"),rgba(0,0,0,0.5);
+        background-blend-mode:overlay;
+        background-size:cover;
+        background-position:center;
+      }
+
+    `}
+    </style>
       <Head>
         <title>Dentist</title>
         <link rel="shortcut icon" href="/images/favicon.ico" />
@@ -21,7 +31,10 @@ const Home: NextPage = () => {
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
         <meta name="description" content="A dentist Website for Booking Sessions" />
         </Head>
+        <div className="background h-[100vh]">
           <Header />
+
+        </div>
         
     </>
   )
